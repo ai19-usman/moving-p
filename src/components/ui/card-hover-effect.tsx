@@ -1,7 +1,3 @@
-
-'use client'
-
-
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
@@ -9,8 +5,6 @@ import { useState } from "react";
 
 export const HoverEffect = ({
   items,
-
-
   className,
 }: {
   items: {
@@ -20,7 +14,7 @@ export const HoverEffect = ({
   }[];
   className?: string;
 }) => {
-  let [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
     <div
