@@ -3,7 +3,9 @@
 import FeaturedCoures from '@/components/FeaturedCourses'
 import FeaturedWebinars from '@/components/FeaturedWebinars'
 import HeroSection from '@/components/HeroSection'
+import Instructor from '@/components/instucters'
 import Navbar from '@/components/Navbar'
+import TestiMonialCard from '@/components/Testmoving'
 import WhyChooseUs from '@/components/WhyChooseUs'
 import React from 'react'
 
@@ -15,6 +17,9 @@ const page = () => {
       <Navbar/>
       <WhyChooseUs/>
       <FeaturedWebinars/>
+      <TestiMonialCard/>
+      
+      <Instructor/>
     </main>
   )
 }
